@@ -59,13 +59,42 @@
       <div class="container-modal" id="modal-presentacion">
         <div class="container-header">
           <span class="title-container">Presentacion</span>
-          <button class="close-button">
-            <img src="./images/close-icon.png" alt="Boton de cerrado" />
-          </button>
+          <button class="close-button" id="close-button-presentacion"></button>
         </div>
         <div class="container-modal-content" style="height: 100%">
           <div class="container">
-            <div class="content"></div>
+            <div class="content">
+              <img src="" alt="Imagen de perfil" />
+              <p>
+                ¡Hola! Mi nombre es Santiago y soy un apasionado estudiante de
+                Ingenieria en Computacion de UNTREF orientado al desarrollo web
+                full stack en constante crecimiento. Estoy emocionado de
+                compartir con vos mi viaje en el mundo del desarrollo web y cómo
+                mi pasión por la tecnología me ha llevado a explorar y crear en
+                el fascinante mundo del desarrollo web. Aunque todavia no tengo
+                experiencia laboral formal en la industria, mi trayectoria en
+                una startup me ha brindado una valiosa experiencia práctica. En
+                este entorno dinámico y ágil, tuve la oportunidad de sumergirme
+                en una variedad de proyectos, desde la creación de prototipos
+                hasta la implementación de soluciones innovadoras. Esta
+                experiencia me ha permitido desarrollar habilidades sólidas en
+                HTML, CSS, JavaScript y en el desarrollo backend así como una
+                comprensión profunda de los principios fundamentales del
+                desarrollo web. Mi enfoque en el aprendizaje continuo y la
+                mejora constante me impulsa a buscar nuevas oportunidades para
+                expandir mis habilidades y conocimientos. Estoy comprometido a
+                mantenerme al día con las últimas tecnologías y tendencias en el
+                mundo del desarrollo web para ofrecer soluciones creativas y de
+                alta calidad. Mi objetivo es colaborar en proyectos emocionantes
+                donde pueda aplicar mis habilidades para crear experiencias web
+                impactantes y funcionales. Estoy ansioso por enfrentar nuevos
+                desafíos, aprender de otros profesionales y contribuir al éxito
+                de proyectos innovadores. ¡Gracias por tomarte el tiempo para
+                visitar mi portafolio! Estoy emocionado de compartir mi trabajo
+                contigo y espero tener la oportunidad de colaborar juntos en el
+                futuro.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -73,21 +102,37 @@
       <div class="container-modal" id="modal-proyectos">
         <div class="container-header">
           <span class="title-container">Proyectos</span>
-          <button class="close-button">
-            <img src="./images/close-icon.png" alt="Boton de cerrado" />
-          </button>
+          <button class="close-button" id="close-button-proyectos"></button>
         </div>
         <div class="container-modal-content" style="height: 100%">
-          <div class="container"><div class="content"></div></div>
+          <div class="container">
+            <div class="content">
+              <h2>Proyectos Destacados</h2>
+              <div class="project">
+                <a href="enlace_al_proyecto1" target="_blank">
+                  <img
+                    src="miniatura_proyecto1.jpg"
+                    alt="Miniatura del Proyecto 1"
+                  />
+                </a>
+              </div>
+              <div class="project">
+                <a href="enlace_al_proyecto2" target="_blank">
+                  <img
+                    src="miniatura_proyecto2.jpg"
+                    alt="Miniatura del Proyecto 2"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!--MODAL EXPERIENCIA-->
       <div class="container-modal" id="modal-experiencia">
         <div class="container-header">
           <span class="title-container">Experiencia y estudios</span>
-          <button class="close-button">
-            <img src="./images/close-icon.png" alt="Boton de cerrado" />
-          </button>
+          <button class="close-button" id="close-button-exp"></button>
         </div>
         <div class="container-modal-content" style="height: 100%">
           <div class="container"><div class="content"></div></div>
@@ -97,18 +142,67 @@
       <div class="container-modal" id="modal-contacto">
         <div class="container-header">
           <span class="title-container">Contacto</span>
-          <button class="close-button">
-            <img src="./images/close-icon.png" alt="Boton de cerrado" />
-          </button>
+          <button class="close-button" id="close-button-contacto"></button>
         </div>
         <div class="container-modal-content" style="height: 100%">
           <div class="container"><div class="content"></div></div>
         </div>
       </div>
+      <div class="start-menu">
+        <div class="start-menu-header">Windows98</div>
+        <div class="start-menu-main">
+          <div class="start-menu-item" name="item-presentacion">
+            <img
+              src="./images/user_card.ico"
+              alt="Icono de presentacion"
+              height="32"
+              width="32"
+            />
+            <span>Presentacion</span>
+          </div>
+          <hr />
+          <div class="start-menu-item" name="item-proyectos">
+            <img
+              src="./images/briefcase.ico"
+              alt="Icono de proyectos"
+              height="32"
+              width="32"
+            />
+            <span>Proyectos</span>
+          </div>
+          <div class="start-menu-item" name="item-exp">
+            <img
+              src="./images/certificate_seal.ico"
+              alt="Icono de experiencia"
+              height="32"
+              width="32"
+            />
+            <span>Experiencia y estudios</span>
+          </div>
+          <div class="start-menu-item" name="item-contacto">
+            <img
+              src="./images/mailbox_world.ico"
+              alt="Icono de contacto"
+              height="32"
+              width="32"
+            />
+            <span>Contactame</span>
+          </div>
+        </div>
+      </div>
     </main>
     <header>
       <div class="bar-menu"><div class="start-button"></div></div>
-      <span class="windows-open-bar"> Ejemplo</span>
+      <span class="windows-open-bar" id="windows-open-bar-presentacion"
+        >Present..</span
+      >
+      <span class="windows-open-bar" id="windows-open-bar-proyectos"
+        >Proyectos</span
+      >
+      <span class="windows-open-bar" id="windows-open-bar-exp">Experie..</span>
+      <span class="windows-open-bar" id="windows-open-bar-contacto"
+        >Contacto
+      </span>
     </header>
 
     <script src="index.js"></script>
